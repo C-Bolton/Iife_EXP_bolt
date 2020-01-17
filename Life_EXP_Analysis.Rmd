@@ -23,6 +23,7 @@ lifeexp<- gapminder::gapminder_unfiltered
 
 lifeexp%>%
   group_by(year)%>%
-  filter(lifeExp == max(lifeExp))->LifeExpAnalysis
+  filter(lifeExp == max(lifeExp))%>%
+  arrange(year)->LifeExpAnalysis
 ```
 
