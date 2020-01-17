@@ -17,11 +17,12 @@ Here we will reproduce the famous plot from Oeppen and Vaupel (2002).
 
 Here we begin the analysis
 
+### Life Expectancy Analysis
 ```{r}
 lifeexp<- gapminder::gapminder_unfiltered
 
 lifeexp%>%
   group_by(year)%>%
-  filter(lifeExp == max(lifeExp))
+  filter(lifeExp == max(lifeExp))->LifeExpAnalysis
 ```
 
