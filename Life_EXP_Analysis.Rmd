@@ -27,3 +27,14 @@ lifeexp%>%
   arrange(year)->LifeExpAnalysis
 ```
 
+### Plot
+
+```{r}
+
+```
+
+
+
+
+
+
